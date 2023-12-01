@@ -1,3 +1,17 @@
+solidity:
+  flattened:
+    - string
+  aliased: []
+  ignored:
+    - ;
+    - '.'
+    - ','
+    - '{'
+    - '}'
+    - (
+    - )
+    - '['
+    - ']'
 go:
   flattened:
     - interpreted_string_literal
