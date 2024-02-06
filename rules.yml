@@ -3,7 +3,36 @@ solidity:
     - string
     - boolean_literal
     - type_name
-  aliased: []
+    - member_expression
+    - primitive_type
+    - visibility
+    - number_literal
+  aliased: 
+    +=: affectation_operator
+    -=: affectation_operator
+    '*=': affectation_operator
+    /=: affectation_operator
+    =: affectation_operator
+    '|=': affectation_operator
+    '&=': affectation_operator
+    ^=: affectation_operator
+    '-': arithmetic_operator
+    +: arithmetic_operator
+    /: arithmetic_operator
+    '*': arithmetic_operator
+    ==: comparison_operator
+    'binary_expression <': comparison_operator
+    <=: comparison_operator
+    'binary_expression >': comparison_operator
+    '>=': comparison_operator
+    '!=': comparison_operator
+    '&&': logical_operator
+    '||': logical_operator
+    ++: increment_operator
+    --: increment_operator
+    '&': bitwise_operator
+    '|': bitwise_operator
+    ^: bitwise_operator
   ignored:
     - ;
     - '.'
@@ -15,6 +44,9 @@ solidity:
     - '['
     - ']'
     - 'comment'
+    - emit 
+    - event
+    - contract
 go:
   flattened:
     - interpreted_string_literal
