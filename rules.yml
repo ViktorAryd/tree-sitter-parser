@@ -7,6 +7,7 @@ solidity:
     - primitive_type
     - visibility
     - number_literal
+    - hex_string_literal
   aliased: 
     +=: affectation_operator
     -=: affectation_operator
